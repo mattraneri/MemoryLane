@@ -132,11 +132,11 @@ body {
 
 #slick-login {
 	min-width: 40%;
-	max-width:80%;
+	max-width: 90%;
 	height: 155px;
 	position: absolute;
 	left: 35%;
-	top: 45%;
+	top: 25%;
 	margin-left: -110px;
 	margin-top: -75px;
 
