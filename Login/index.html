@@ -1,16 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="jquery-1.10.2.min.js"></script>
   <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
   <script src="login.js"></script>
+  <script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
+  <script type="text/javascript" src="placeholder.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h2>Login</h2><br>
-<input id="username" type="text" placeholder="Username"/>
-<br><br>
-<input id="password" type="password" placeholder="Password"/>
-<br><br>
-<input id="submit"type="submit" value="Log In">
+<form id="slick-login">
+	<h1>Memory<span>Lane</span></h1>
+<label for="username">username</label><input type="text" id="username" name="username" class="placeholder" placeholder="Username">
+<label for="password">password</label><input type="password" id="password" name="password" class="placeholder" placeholder="password">
+<input id="submit" type="submit" value="Log In">
+</form>
 </body>
-</html>
