@@ -1,16 +1,11 @@
-$(document).ready(function(){
-Parse.initialize("BIKAjoie2DfWo8w3022C7kgXlJpUoYFWv8Kwsoog", "cOqVO2RyFUDLBtfv5TzmpEZHsg5ThCdXnOtQrxsw");
+// $(document).ready(function(){
+//   $('#submit').on("ontouchend",function(){
+//     var username = $('#username').val();
+//     var password = $('#password').val();
 
-$('#submit').click(function(){
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  Parse.User.logIn(username, password, {
-  success: function(user) {
-    alert("Logged in!")
-  },
-  error: function(user, error) {
-    alert("Incorrect Credentials.")
-  }
-});
-});
-});
+//     var url = "http://memorylane.nazuka.net/login.php?user=" + username + "&pass=" + password;
+//     $.ajax(url).done(function(response){
+        
+//     })
+// });
+// });
