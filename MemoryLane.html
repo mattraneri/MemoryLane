@@ -2,8 +2,161 @@
 <html>
 <head>
 <title>MemoryLane</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script type="text/javascript" href="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 </head>
 <body>
-	<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AsONg-X83fALdFh1SUFsYmpBT2RJVndDbG9RUHpacWc&font=Bevan-PotanoSans&maptype=TERRAIN&lang=en&height=250' width='10%' height='' frameborder='0'></iframe>
+	<style type="text/css">
+	body{
+		background-color: #d6cfc3;
+		font-family: 'Raleway', sans-serif;
+	}
+	#header{
+		padding-top: 40px;
+	}
+	#Logo{
+
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		font-size: 2em;
+		color:white;
+		background-color: #3c96ba;
+		position:absolute;
+		text-align: left;
+		left:0%;
+		margin-left:.01%;
+		margin-right:-35%;
+		margin-top: 0;
+		top:0;
+		right:35%;
+		border-right: solid black ;
+		border-left: solid black ;
+		border-bottom: solid black 1px;
+		box-shadow: .4em .1em .1em grey;
+
+
+	}
+	#BOTTOM{
+		position: fixed;
+		bottom: 0%;
+		left: 0%;
+		right: 0%;
+		width: 100%;
+		background-color: #2e2d36;
+		opacity: 1;
+		padding-top: 1%;
+		padding-bottom: 10%;
+		border-top: solid black;
+		border-radius: 5px;
+
+	}
+	#home_button{
+	position: fixed;
+	left: 1%;
+	width: 33%;
+    float: left;
+    text-align: center;
+    background-color: #2e2d36;
+    height:5%;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 9%;
+    background-image:url("home.png");
+	background-repeat: no-repeat;
+	background-position:center; 
+	}
+
+	#make_button{
+		width: 33%;
+		position: fixed;
+		left: 35%;
+		background-color: #d6cfc3;
+		text-align: center;
+		height:5%;
+		border: none;
+		border-radius: 5px;
+	 	padding-bottom: 9%;
+	 	background-image: url("build.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+
+}
+	
+	#setting_button{
+    width: 30%;
+    position: fixed;
+    right: 1%;
+    float: right;
+    text-align: center;
+    background-color: #d6fc3;
+    height: 5%;
+    border: none;
+	border-radius: 5px;
+	padding-bottom: 9%;
+
+	 	background-image: url("settings.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+
+    }
+    #timeline{
+    	position:relative;
+    	background-color: #F0F0F0 ;
+    		left:0%;
+		margin-left:1%;
+		margin-right:1%;
+		margin-top: 0;
+		top:0;
+		width: 95%;
+		height:35em;
+		right:35%;
+		border-right: solid black ;
+		border-left: solid black ;
+		border-bottom: solid black 1px;
+		box-shadow: .4em .1em .1em grey;
+
+
+    }
+
+    @media(min-width: 50%){
+    	#timeline{
+    		position: relative;
+    		margin-top: 35%;    	}
+    }
+/*
+    @media(max-width: 50px){
+    	#timeline{
+    		padding-bottom: 90%;
+    	}
+    }*/
+
+	</style>
+	<div id="body">
+		<div id="header">
+		<h1 id="Logo">MemoryLane </h1>
+		</div>	
+		
+	<div id="timeline">
+	<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Bevan-PotanoSans&maptype=TERRAIN&lang=en&height=550' width='100%' height='550' frameborder='0' ></iframe>
+	<!--		    
+      <div id="timeline-embed"></div>
+      <script type="text/javascript">
+        var timeline_config = {
+         width: "100%",
+         height: "100%",
+         source: 'example_jsonp.jsonp'
+        }
+      </script>
+      <script type="text/javascript" src="../compiled/js/storyjs-embed.js"></script>
+	-->
+		</div>
+		<div id="BOTTOM">
+			<a><input type="button" id="home_button"></input></a>
+			<a href="Make.html"><input type="button"  id="make_button"></input></a>
+			<a><input type="button" id="setting_button"></input></a>
+		 </div>
+
+</div>
+	
 </body>
 </html>
