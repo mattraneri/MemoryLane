@@ -1,0 +1,28 @@
+* {
+  -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
+  -webkit-touch-callout: none; /* Disable touch callouts */
+}
+input, textarea {
+  -webkit-user-select: text;  /* Allow selection for input elements */
+}
+body{
+  background: white;
+  margin: 0;
+}
+.menu{
+  margin: 0;
+  padding: 0;
+}
+.menu li{
+  font-family: 'Raleway';
+  font-weight: 200;
+  line-height: 60px;
+  padding-left: 3%;
+  height: 60px;
+  width: 97%;
+  font-size: 14pt;
+  list-style: none;
+}
+.menu li:nth-child(n){
+  border-bottom: 1px solid #CCC;
+}
