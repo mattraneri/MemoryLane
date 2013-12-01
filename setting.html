@@ -1,0 +1,160 @@
+<!Doctype html>
+<html>
+<head>
+<title>Settings</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<style type="text/css">
+	body{
+		background-color: #d6cfc3;
+
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+
+	}
+		#Logo{
+
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		font-size: 1em;
+		color:white;
+		background-color: #3c96ba;
+		position:absolute;
+		text-align: left;
+		left:0%;
+		/*margin-left:.01%;
+		margin-right:-35%;*/
+		width: 100%;
+		margin-top: 0;
+		top:0;
+		right:35%;
+		border-right: solid black ;
+		border-left: solid black ;
+		border-bottom: solid black 1px;
+		box-shadow: .4em .1em .1em grey;
+		padding-bottom: 2em;
+
+}
+#header{
+	font-family: 'Raleway', sans-serif;
+		background-color:#d6cfc3;
+		box-shadow: 1px 1px 1px gray;
+		border-width: solid black 1px;
+		position:relative;
+		top:0; 
+		border-right: solid black 2px;
+		border-left: solid black 2px;
+
+	}
+	#BOTTOM{
+		position: fixed;
+		bottom: 0%;
+		left: 0%;
+		right: 0%;
+		width: 100%;
+		background-color: #2e2d36;
+		opacity: 1;
+		padding-top: 1%;
+		padding-bottom: 10%;
+		border-top: solid black;
+		border-radius: 5px;
+
+	}
+	#home_button{
+	position: fixed;
+	left: 1%;
+	width: 33%;
+    float: left;
+    text-align: center;
+    background-color: #d6cfc3;
+    height:5%;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 9%;
+    background-image:url("home.png");
+	background-repeat: no-repeat;
+	background-position:center; 
+	}
+	#home_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+
+	#make_button{
+		width: 33%;
+		position: fixed;
+		left: 35%;
+		background-color: #d6cfc3;
+		text-align: center;
+		height:5%;
+		border: none;
+		border-radius: 5px;
+	 	padding-bottom: 9%;
+	 	background-image: url("build.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+
+}
+#make_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+	
+	#setting_button{
+    width: 30%;
+    position: fixed;
+    right: 1%;
+    float: right;
+    text-align: center;
+    background-color: #2e2d36;
+    height: 5%;
+    border: none;
+	border-radius: 5px;
+	padding-bottom: 9%;
+
+	 	background-image: url("settings.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+    }
+    #body{
+		height: 25em;
+		width: 100%;
+		border: solid black 1px;
+		background-color: #d6cfc3;
+		box-shadow: .2em .2em .1em grey;
+	}
+	
+	#choice:hover{
+		color:white;
+		background-color: black;
+		
+	}
+	</style>
+<h1 id="Logo">MemoryLane </h1>
+<h1 id="header">Preferences</h1>
+
+<div id="body">
+<a><div id="choice" style="height:20%">MyLane</div></a>
+	
+<a><div id="choice" style="height:20%">Account</div></a>
+	
+<a><div id="choice" style="height:20%">Privacy</div></a>
+	
+<a><div id="choice" style="height:20%">Terms and policies</div></a>
+	
+<a><div id="choice" style="height:20%">Settings</div></a>
+	
+</div>
+
+
+
+<div id="BOTTOM">
+			<a href="MemoryLane.html"><input type="button" id="home_button"></input></a>
+			<a href="Make.html"><input type="button"  id="make_button"></input></a>
+			<a href="setting.html"><input type="button" id="setting_button"></input></a>
+		 </div>
+</body>
+</html>

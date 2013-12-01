@@ -1,0 +1,168 @@
+<!Doctype html>
+<html>
+<head>
+<title>Make a Timeline</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script type="text/javascript" href="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	body{
+		background-color: #d6cfc3;
+	}
+	#Logo{
+
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		font-size: 1em;
+		color:white;
+		background-color: #3c96ba;
+		position:absolute;
+		text-align: left;
+		left:0%;
+		/*margin-left:.01%;
+		margin-right:-35%;*/
+		width: 99%;
+		margin-top: 0;
+		top:0;
+		right:35%;
+		border-right: solid black ;
+		border-left: solid black ;
+		border-bottom: solid black 1px;
+		box-shadow: .4em .1em .1em grey;
+		padding-bottom: 2em;
+
+}
+#header{
+	font-family: 'Raleway', sans-serif;
+		background-color:#d6cfc3;
+		box-shadow: 1px 1px 1px gray;
+		border-width: solid black 1px;
+		position:relative;
+		top:0; 
+		border-right: solid black 2px;
+		border-left: solid black 2px;
+
+	}
+	
+	#create{
+		background-color: #3c96ba;
+		border: black solid 1px;
+		color:white ;
+		margin-left: 0%; 
+		margin-top: -10%;
+		float: left;
+		padding:0.5em;
+		padding-right: 2.5em;
+	}
+	#create_space{
+		height: 25em;
+		width: 98%;
+		border: solid black 1px;
+		background-color: #d6cfc3;
+		box-shadow: .2em .2em .1em grey;
+	}
+
+	#BOTTOM{
+		position: fixed;
+		bottom: 0%;
+		left: 0%;
+		right: 0%;
+		width: 100%;
+		background-color: #2e2d36;
+		opacity: 1;
+		padding-top: 1%;
+		padding-bottom: 10%;
+		border-top: solid black;
+		border-radius: 5px;
+
+	}
+	#home_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+#setting_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+	#home_button{
+	position: fixed;
+	left: 1%;
+	width: 33%;
+    float: left;
+    text-align: center;
+    background-color: #d6cfc3;
+    height:5%;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 9%;
+    background-image:url("home.png");
+	background-repeat: no-repeat;
+	background-position:center; 
+	}
+
+	#make_button{
+		width: 33%;
+		position: fixed;
+		left: 35%;
+		background-color: #2e2d36;
+		text-align: center;
+		height:5%;
+		border: none;
+		border-radius: 5px;
+	 	padding-bottom: 9%;
+	 	background-image: url("build.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+
+}
+	
+	#setting_button{
+    width: 30%;
+    position: fixed;
+    right: 1%;
+    float: right;
+    text-align: center;
+    background-color: #d6fc3;
+    height: 5%;
+    border: none;
+	border-radius: 5px;
+	padding-bottom: 9%;
+
+	 	background-image: url("settings.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+
+    }
+    #setting_button:focus{
+    	background-color: #2e2d36;
+    }
+    #timeline{
+    	position: relative;
+    	width: 100%;
+    }
+ 
+</style>
+
+		<h1 id="Logo">MemoryLane </h1>	
+<h1 id="header">Make a  New Lane</h1>
+<br>
+	<div id="workspace">
+		<input id="create" type="button" value="+ CREATE">
+		<div id="create_space">
+
+	<iframe id="timeline" src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Bevan-PotanoSans&maptype=TERRAIN&lang=en&height=400' width='100%' height='440' frameborder='0' ></iframe>
+		</div>
+
+	</div>
+
+		<div id="BOTTOM">
+			<a href="MemoryLane.html"><input type="button" id="home_button"></input></a>
+			<a><input type="button"  id="make_button"></input></a>
+			<a href="setting.html"><input type="button" id="setting_button"></input></a>
+		 </div>
+</body>
+
+</html>

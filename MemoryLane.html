@@ -6,6 +6,7 @@
 <script type="text/javascript" href="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 </head>
 <body>
+	
 	<style type="text/css">
 	body{
 		background-color: #d6cfc3;
@@ -14,28 +15,7 @@
 	#header{
 		padding-top: 40px;
 	}
-	#Logo{
-
-		font-family: 'Raleway', sans-serif;
-		font-weight: 100;
-		font-size: 2em;
-		color:white;
-		background-color: #3c96ba;
-		position:absolute;
-		text-align: left;
-		left:0%;
-		margin-left:.01%;
-		margin-right:-35%;
-		margin-top: -51px;
-		padding-bottom:2em;
-		right:35%;
-		border-right: solid black ;
-		border-left: solid black ;
-		border-bottom: solid black 1px;
-		box-shadow: .4em .1em .1em grey;
-
-
-	}
+	
 	#BOTTOM{
 		position: fixed;
 		bottom: 0%;
@@ -66,6 +46,7 @@
 	background-position:center; 
 	}
 
+
 	#make_button{
 		width: 33%;
 		position: fixed;
@@ -88,7 +69,7 @@
     right: 1%;
     float: right;
     text-align: center;
-    background-color: #2e2d36;
+    background-color: #d6cfc3;
     height: 5%;
     border: none;
 	border-radius: 5px;
@@ -97,15 +78,25 @@
 	 	background-image: url("settings.png");
 	 	background-repeat: no-repeat;
 	 	background-position: center;
-
     }
+    #make_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+#setting_button:hover{
+	background-color:#2e2d36;
+	background-size: 4em;
+	transition-duration:.4s;
+}
+    @-webkit-keyframes myfirst /* Safari and Chrome */
     #timeline{
     	position:relative;
     	background-color: #F0F0F0 ;
     		left:0%;
 		margin-left:1%;
 		margin-right:1%;
-		margin-top:-10px;
+		margin-top:-15px;
 		top:0;
 		width: 95%;
 		right:35%;
@@ -129,8 +120,31 @@
     	position: fixed;
     	margin-top: 20%;
     	margin-left: 100%;
-    	background-color: red;
-    }
+    	background-color: red;}
+    #Logo{
+
+		font-family: 'Raleway', sans-serif;
+		font-weight: 100;
+		font-size: 2em;
+		color:white;
+		background-color: #3c96ba;
+		position:absolute;
+		top:0;
+		text-align: left;
+		left:0%;
+		margin-left:.01%;
+		margin-right:-35%;
+		margin-top: -51px;
+		padding-bottom:2em;
+		right:35%;
+		border-right: solid black ;
+		border-left: solid black ;
+		border-bottom: solid black 1px;
+		box-shadow: .4em .1em .1em grey;
+
+
+	}
+    
 /*
     @media(max-width: 50px){
     	#timeline{
@@ -146,7 +160,7 @@
 		</div>	
 		
 	<div id="timeline">
-	<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Bevan-PotanoSans&maptype=TERRAIN&lang=en&height=720' width='100%' height='720' frameborder='0' ></iframe>
+	<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Bevan-PotanoSans&maptype=TERRAIN&lang=en&height=700' width='100%' height='700' frameborder='0' ></iframe>
 	<!--		    
       <div id="timeline-embed"></div>
       <script type="text/javascript">
